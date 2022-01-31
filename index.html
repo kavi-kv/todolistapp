@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sample.css">
+    <title>Todoapp</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>🛒Todo 😋 List🛒</h1>
+        </div>
+        <div class="add-task">
+            <input type="text" name="" class="add-task-btn"" id="add-task-btn" 
+            placeholder="Add A Task...">
+            <button id="add-btn" class="add-btn">+</button>
+        </div>
+        <div class="task-header">
+            <h2>Tasks</h2>
+            <button id="revome-btn" class="remove-btn">Delete Task</button>
+        </div>
+        <div class="task-list-wrapper">
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+    <template id="task-templete">
+        <li class="task">
+            <input type="checkbox">
+            <label>
+                <span class="check-mark">&#10004;</span>
+                <span class="custom-check-box"></span>
+            </label>
+        </li>
+    </template>
+    
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./todo.js"></script>
+</body>
+</html>
