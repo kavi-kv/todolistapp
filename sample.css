@@ -43,8 +43,8 @@ body {
     border-bottom: 1px solid #272727;
     outline: none;
     transition: border 150ms ease-in-out;
-    position: relative;
-    right: 10px;
+    position: absolute;
+    left: 21px;
 }
 .add-task input::placeholder {
     opacity: 1;
