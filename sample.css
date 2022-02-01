@@ -8,9 +8,14 @@
 body {
     background: #272727;
     color: #fff;
+    @media screen {
+        background:#fff;
+        color:black;
+    }
 }
+
 .wrapper {
-    margin: 0 20px;
+    margin: 0 outo;
     max-width: 100%;
     flex-wrap: wrap;
 }
@@ -33,18 +38,13 @@ body {
     color:  #272727;
     width: 100%;
     padding: 20px;
-    
-    
-    
-    
 }
 .add-task input{
     border: 0;
     border-bottom: 1px solid #272727;
     outline: none;
     transition: border 150ms ease-in-out;
-    position: absolute;
-    left: 21px;
+    
 }
 .add-task input::placeholder {
     opacity: 1;
@@ -93,8 +93,6 @@ body {
     width: 100%;
     text-decoration:underline;
     -webkit-text-stroke:1px #514585;
-
-    
 }
 .remove-btn {
     position: absolute;
@@ -186,8 +184,49 @@ body {
     color: blue;
 }
 
+/* Mobile View */
+@media only screen and (min-width: 375px) {
+    .add-task {
+        display: flex;
+        justify-content: left;
+        padding: 2px;
+        width: 100%;
+    }
+    .add-btn {
+        padding-right: 100px;
 
-@media all and (max-width: 500px) {
+    }
+}
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+    .add-task {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .remove-btn {
+        right: 25vw;
+    }
+    .header {
+        width: 100%;
+        
+    }
     
 }
+/* Desktop/laptop View */
+@media only screen and (min-width: 1024px) {
+    .remove-btn {
+        right: 12vw;
+    }
+    .add-task {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+
 
